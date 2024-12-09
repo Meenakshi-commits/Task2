@@ -9,37 +9,72 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Saira:ital,wght@0,100..900;1,100..900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<script> 
+    tailwind.config={
+    theme: {
+      fontFamily: {
+        'righteous' : ['Righteous', 'serif'],
+             }
+    }
+  }
+</script>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="#"><img src="Askmeidentity.png" alt="AskmeIdentity Logo"></a>
+    <header class="bg-white text-black font-righteous p-5 flex items-center justify-between">
+        <!-- Logo Section -->
+        <div class="flex items-center space-x-10">
+            <div class="logo">
+                <a href="#">
+                    <img src="Askmeidentity.png" alt="AskmeIdentity Logo" class="h-25 ">
+                </a>
+            </div>
+    
+            <!-- Navigation Menu -->
+            <nav class="flex-grow flex justify-center items-center">
+                <ul class="flex list-none p-0 m-0 space-x-8">
+                    <li>
+                        <a href="#" class="text-black no-underline font-medium">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-black no-underline font-medium">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-black no-underline font-medium">Courses</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-black no-underline font-medium">Contact</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="icons">
-            <a href="#"><i>
-                <img src="cartcount.png" alt="icon" class="cartcount" style="width: 16px; height: 16px;">
-                <img src="cart.png" alt="icon" class="overlay"style="width: 16px; height: 16px;">
-            </i></a>
-            <a href="#"><i>
-                <img src="contact.png" alt="icon" style="width: 16px; height: 16px;">
-            </i></a> <a href="#"><i>
-                <img src="search.png" alt="icon" style="width: 16px; height: 16px;">
-            </i></a>
+        <div class="flex items-center space-x-8">
+            <!-- Icons Section -->
+            <div class="flex items-center space-x-5">
+                <div class="relative">
+                    <img src="cartcount.png" alt="Cart Count" class="w-5 h-5">
+                    <img src="cart.png" alt="Cart Icon" class="absolute top-0 right-0 w-3 h-3">
+                </div>
+                <a href="#" class="p-2">
+                    <img src="contact.png" alt="Contact Icon" class="w-4 h-4">
+                </a>
+                <a href="#">
+                    <img src="search.png" alt="Search Icon" class="w-4 h-4">
+                </a>
+            </div>
+        <!-- Buttons Section -->
+        <div class="flex space-x-3">
+            <button class="bg-white text-gray-700 font-righteous px-5 py-2 rounded border border-transparent hover:shadow-md">
+                Login
+            </button>
+            <button class="bg-gradient-to-r from-blue-900 via-indigo-600 to-purple-500 text-white px-5 py-2 rounded">
+                Signup
+            </button>
         </div>
-        <div class="buttons">
-            <button class="login-btn">Login</button>
-            <button class="signup-btn">Signup</button>
-        </div>
+    </div>
     </header>
+    
 </body>
 </html>
