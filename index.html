@@ -35,6 +35,7 @@
           backgroundImage: {
             'custom-radial': 'radial-gradient(circle at 70% 70%, #ffffff, #c6c6dc, #8d8bd4, #5d44cf, #3f13b2, #2b0f9c, #170984, #04016c)',
             'bglinear': 'linear-gradient(180deg, #2e08c7, #4008c6, #4e08c7, #5908c7, #6308c7, #6c08c7)',
+            'custom-gradient': 'linear-gradient(0deg, rgba(115,159,232,1) 0%, rgba(79,24,202,1) 100%)',
           },
         },
       },
@@ -217,7 +218,7 @@
 
 <!-- Course Section -->
   
-    <div class="gap-6 bg-[url('./course.png')] bg-cover my-10 mx-10 p-4">
+    <div class="gap-6 bg-gradient-to-b from-white to-blue-100  my-12  p-12">
       <div class="container flex items-center justify-between mb-8">
         <img src="./Ellipse.png" alt="Icon" class="w-14 h-15 ml-24 ">
         <div class="text-center font-righteous w-full">
@@ -419,44 +420,120 @@
 
 
           <!-- LEARN SECTION -->
-        <section class="bg-gradient-to-r from-blue-500 to-purple-500 py-20">
-          <div class="container mx-auto text-center text-white">
+          <section class="bg-custom-gradient py-20 -mt-12 ">
+            <div class="container mx-auto text-center text-white">
+              <!-- Heading -->
+              <h2 class="text-2xl font-bold fontfamily-Righteous mb-4">
+                Why <span class="text-blue-600">learn</span> with our courses?
+              </h2>
+              <p class="text-xl text-center mb-16">
+                We are providing the best courses and top classes. And <br> extraordinary placement training...
+              </p>
+        
+              <div class="grid grid-cols-1 md:grid-cols-5 gap-1 px-2 md:px-10 max-w-4xl mx-auto">
+                <div class="flex flex-col items-center col-span-1">
+                  <img src="./learn.png" alt="Learn Icon" class="w-16 h-16 mb-2">
+                  <h3 class="text-xl font-semibold mb-1">01. Learn</h3>
+                  <p class="text-center text-sm">Learn continually. There is always "one more thing" to learn.</p>
+                </div>
+              
+                <div class="flex justify-center items-center col-span-1">
+                  <img src="./line.png" alt="Line Icon" class="w-1 h-16">
+                </div>
+              
+                <div class="flex flex-col items-center col-span-1">
+                  <img src="./work.png" alt="Graduate Icon" class="w-16 h-16 mb-2">
+                  <h3 class="text-xl font-semibold mb-1">02. Graduate</h3>
+                  <p class="text-center text-sm">Be bold, be courageous, be your best.</p>
+                </div>
+              
+                <div class="flex justify-center items-center col-span-1">
+                  <img src="./line.png" alt="Line Icon" class="w-1 h-16">
+                </div>
+              
+                <div class="flex flex-col items-center col-span-1">
+                  <img src="./graduate.png" alt="Work Icon" class="w-16 h-16 mb-2">
+                  <h3 class="text-xl font-semibold mb-1">03. Work</h3>
+                  <p class="text-center text-sm">Great companies are built in the office, with hard work put in by team.</p>
+                </div>
+              </div>              
+            </div>
+          </section>
+          
+
+
+         <!-- Categories Section -->
+         <div class="bg-gradient-to-b from-white to-blue-100 py-16 px-20 ">
+          <div class="container mx-auto text-center">
             <!-- Heading -->
-            <h2 class="text-4xl font-bold mb-4">
-              Why <span class="text-blue-200">learn</span> with our courses?
+            <h2 class="text-3xl font-bold mb-2">
+              Top <span class="text-blue-600">Categories</span>
             </h2>
-            <!-- Subheading -->
-            <p class="text-xl mb-16">
-              We are providing the best courses and top classes. And extraordinary placement training...
+            <p class="text-gray-600 mb-12">
+              100+ unique online course list designs
             </p>
         
-            <!-- Row of Icons -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-              <!-- Icon 1: Learn -->
-              <div class="flex flex-col items-center">
-                <img src="./learn.png" alt="Learn Icon" class="w-20 h-20 mb-4">
-                <h3 class="text-2xl font-semibold mb-2">01. Learn</h3>
-                <p class="text-center">Learn continually. There is always "one more thing" to learn.</p>
+            <!-- Cards Section -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-0 px-4"> <!-- Reduced gap to gap-2 -->
+              <!-- Card 1 -->
+              <div class="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center h-64 w-40">
+
+                <div class=" p-4 rounded-full mb-4">
+                  <img src="./box-image.png" alt="Digital Marketing Icon" class="w-8 h-8">
+                </div>
+                <h3 class="text-lg font-semibold text-gray-800">Digital Marketing</h3>
+                <p class="text-gray-500 text-sm">25 Courses</p>
               </div>
         
-              <!-- Icon 2: Graduate -->
-              <div class="flex flex-col items-center">
-                <img src="./work.png" alt="Graduate Icon" class="w-20 h-20 mb-4">
-                <h3 class="text-2xl font-semibold mb-2">02. Graduate</h3>
-                <p class="text-center">Be bold, be courageous, be your best.</p>
+              <!-- Card 2 -->
+              <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center h-64 w-40">
+                <div class=" p-4 rounded-full mb-4">
+                  <img src="./box-image (1).png" alt="Web Development Icon" class="w-8 h-8">
+                </div>
+                <h3 class="text-lg font-semibold text-gray-800">Web Development</h3>
+                <p class="text-gray-500 text-sm">16 Courses</p>
               </div>
         
-              <!-- Icon 3: Work -->
-              <div class="flex flex-col items-center">
-                <img src="./graduate.png" alt="Work Icon" class="w-20 h-20 mb-4">
-                <h3 class="text-2xl font-semibold mb-2">03. Work</h3>
-                <p class="text-center">Great companies are built in the office, with hard work put in by team.</p>
+              <!-- Card 3 -->
+              <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center h-64 w-40">
+                <div class=" p-4 rounded-full mb-4">
+                  <img src="./box-image (2).png" alt="Art & Humanities Icon" class="w-8 h-8">
+                </div>
+                <h3 class="text-lg font-semibold text-gray-800">Art & Humanities</h3>
+                <p class="text-gray-500 text-sm">76 Courses</p>
+              </div>
+        
+              <!-- Card 4 -->
+              <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center h-64 w-40">
+                <div class=" p-4 rounded-full mb-4">
+                  <img src="./box-image (3).png" alt="Personal Development Icon" class="w-8 h-8">
+                </div>
+                <h3 class="text-lg font-semibold text-gray-800">Personal Development</h3>
+                <p class="text-gray-500 text-sm">22 Courses</p>
+              </div>
+        
+              <!-- Card 5 -->
+              <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center h-64 w-40">
+                <div class=" p-4 rounded-full mb-4">
+                  <img src="./box-image (4).png" alt="IT and Software Icon" class="w-8 h-8">
+                </div>
+                <h3 class="text-lg font-semibold text-gray-800">IT and Software</h3>
+                <p class="text-gray-500 text-sm">110 Courses</p>
+              </div>
+        
+              <!-- Card 6 -->
+              <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center h-64 w-40">
+                <div class="p-4 rounded-full mb-4">
+                  <img src="./box-image (5).png" alt="Graphic Design Icon" class="w-8 h-8">
+                </div>
+                <h3 class="text-lg font-semibold text-gray-800">Graphic Design</h3>
+                <p class="text-gray-500 text-sm">85 Courses</p>
               </div>
             </div>
           </div>
-        </section>
+        </div>
         
-
+          
   
   
 
